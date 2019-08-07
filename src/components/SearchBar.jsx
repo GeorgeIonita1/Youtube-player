@@ -11,16 +11,16 @@ class SearchBar extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="search-bar ui icon input">
-                    <form className='ui form' onSubmit={this.onHandleFormSubmit} >
-                        <div className='ui icon input'>
+            <div >
+                <div style={{width: '100%'}} className="ui input">
+                    <form style={{width: '100%'}} className='ui form' onSubmit={this.onHandleFormSubmit} >
+                        <div style={{width: '100%'}} className='ui icon input'>
                             <input 
                                 type="text" 
                                 placeholder={this.state.term} 
                                 onChange={ e => this.setState({term: e.target.value})} 
                             />
-                            <i className="search icon"></i>
+                            <i className="search icon" onClick={this.onHandleFormSubmit}></i>
                         </div>
                     </form>
                     

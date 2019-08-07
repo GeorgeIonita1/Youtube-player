@@ -29,9 +29,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='ui container'>
-                App
-                <SearchBar onFormSubmit={this.onTermSubmit} />
+            <div style={{marginTop: '50px'}} className='ui container'>
+                <i style={{marginLeft: '42%'}} className="youtube massive red icon"></i>
+                <SearchBar  onFormSubmit={this.onTermSubmit} />
                 <div className='ui grid'>
                     <div className='ui row'>
                         <div className='eleven wide column'>
